@@ -52,7 +52,7 @@
             <div class="logo_header">
                 <span style="color: #eb3750;">
                     < </span>
-                        <span style="color: #eb3750;">HackClub</span>
+                        <span style="color: #eb3750;">EXE</span>
                         <span style="color: #eb3750;">/></span>
             </div>
         </a>
@@ -64,13 +64,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbars navbar-nav ms-auto">
                 <li><a href="index.html" class="hover-line nav navbars">HOME</a></li>
-                <li><a href="team.html" class="hover-line nav navbars">TEAM</a></li>
                 <li><a href="projects.html" class="hover-line nav navbars">PROJECTS</a></li>
-                <li><a href="contributer.html" class="active hover-line nav navbars">CONTRIBUTORS</a></li>
+                <li><a href="contributer.html" class="active hover-line nav navbars">MEMBERS & ALUMNI</a></li>
                 <!-- NAVBAR HIGHLIGHT FOR CURRENT PAGE -->
-                <li><a href="opportunity.html" class="hover-line nav navbars">OPPORTUNITIES</a></li>
-                <li><a href="blogs.html" class="hover-line nav navbars">BLOGS</a></li>
+                <li><a href="opportunity.html" class="hover-line nav navbars">RUSH SCHEDULE</a></li>
                 <li><a href="contact.html" class="hover-line nav navbars">CONTACT US</a></li>
+                <li><a href="team.html" class="hover-line nav navbars">FOUNDATION</a></li>
+            </ul>
+
+
+
+
         </div>
     </nav>
     <div class="contributor_svg_section">
@@ -440,62 +444,93 @@
         </svg>
         <div class="contributor_text">
             <h2>Building Our Community</h2>
-            <h4>Meet our Contributors</h4>
+            <h4>MEOW</h4>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <div class="contributor_bar">
-    <h4 class="contributor_header"> Our Contributors</h4>
-    <input type="text" id="search" placeholder="Find a Contributor"></div>
-
+    <h4 class="contributor_header">Our Members</h4>
+    <input type="text" id="search" placeholder="Find a Member"></div>
+<!-- 
     <div id="contributor" data-aos="zoom-out-up">
-    </div>
-</body>
-<script>
+    </div> -->
+
+    <div id="contributor" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+
+
+
+    <script>
+    const contributors = [
+      { 
+        Name: "Vincent Iadarola", 
+        html_url: "https://www.linkedin.com/in/vincent-iadarola-2528832a7/", 
+        avatar_url: "member_imgs/VIadarola.jpeg", 
+        roles_held: "President" 
+      },
+      { 
+        Name: "Tyler RichardSON", 
+        html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images", 
+        avatar_url: "member_imgs/tylah.jpg", 
+        roles_held: "Treasurer" 
+      },
+      { 
+        Name: "Kellen Klein", 
+        html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images", 
+        avatar_url: "member_imgs/Kellog.jpeg", 
+        roles_held: "Member" 
+      },
+      { 
+        Name: "Emma Wang", 
+        html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images", 
+        avatar_url: "member_imgs/empty.jpeg.jpg", 
+        roles_held: "Member" 
+      },
+      { 
+        Name: "Maxwell Schwarz", 
+        html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images", 
+        avatar_url: "member_imgs/empty.jpeg.jpg", 
+        roles_held: "Member" 
+      },
+      // Add as many as you need
+    ];
+  
     const contributorBlockContainer = document.getElementById('contributor');
     const searchBar = document.getElementById("search");
-    // console.log(searchBar)
-    let contributorsInfoResponse = [];
-    // console.log(contributorsInfoResponse)
-
-
-    searchBar.addEventListener('keyup', (input_value) => {
-        //to convert the given input into lowercase
-        const inputValue = input_value.target.value.toLowerCase();
-        // console.log(inputValue)
-        const findContributors = contributorsInfoResponse.filter((response) => {
-            return response.login.toLowerCase().includes(inputValue);
-        });
-        showContributorsInfo(findContributors);
-    })
-    const getContributorsInfo = async () => {
-        try {
-            const res = await fetch('https://api.github.com/repos/HackClubRAIT/HackClubRAIT-Website/contributors?per_page=100');
-            contributorsInfoResponse = await res.json();
-            // console.log(contributorsInfoResponse)
-
-            showContributorsInfo(contributorsInfoResponse);
-        } catch (fetch_error) {
-            // return fetch_error
-            console.error(fetch_error);
-        }
-    };
-
+  
+    searchBar.addEventListener('keyup', (event) => {
+      const inputValue = event.target.value.toLowerCase();
+      const findContributors = contributors.filter((contributor) =>
+        contributor.Name.toLowerCase().includes(inputValue)
+      );
+      showContributorsInfo(findContributors);
+    });
+  
     const showContributorsInfo = (contribInfos) => {
         const cardInnerContent = contribInfos
             .map((info) => {
-                return `
-        <div class="userBlock"><a href="${info.html_url}" target="_blank_"><img src="${info.avatar_url}"/></a><div><h4>@${info.login}</h4><p>Contributions: ${info.contributions}</p></div></div>
-        `;
-            })
-            .join('');
+            return `
+                <div class="userBlock" style="border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+                <a href="${info.html_url}" target="_blank">
+                    <img src="${info.avatar_url}" alt="${info.Name}" />
+                </a>
+                <div>
+                    <h4>${info.Name}</h4>
+                    <p>${info.roles_held}</p>
+                </div>
+                </div>
+            `;
+            }
+        ).join('');
         contributorBlockContainer.innerHTML = cardInnerContent;
     };
+    // Display all contributors by default
+    showContributorsInfo(contributors);
+  </script>
+</body>
 
-    getContributorsInfo();
-    AOS.init({
-        duration: 1200,
-    })
-</script>
+
+  
+  
+
 
 </html>

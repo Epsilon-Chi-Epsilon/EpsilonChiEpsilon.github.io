@@ -611,6 +611,7 @@ h1 {
   text-shadow: 6px 6px 10px black;
 }
 #contributor {
+
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -620,7 +621,12 @@ h1 {
   transform: translateY(100px);
 }
 
+
+
+
 #contributor .userBlock {
+  position: relative;    /* Ensure it establishes its own stacking context */
+  z-index: 9999;         /* Very high to appear on top of sibling elements */
 
     padding-bottom: 15px;
     border: 2px solid var(--red);
