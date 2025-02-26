@@ -12,33 +12,39 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="icon" href="./images/hackclubrait-logo.png">
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 
-    <title>Contributors</title>
+    <title>Members & Alumni</title>
     <style>
-        .contributor_svg_section{
+        .contributor_svg_section {
             display: flex;
             justify-content: space-between;
-            
-            background: linear-gradient(90deg,#4f477ad7 , #212529 80%);
+
+            background: linear-gradient(90deg, #4f477ad7, #212529 80%);
             padding: 6%;
             padding-top: 11%;
             padding-right: 1%;
 
         }
-        .contributor_svg_section svg{
+
+        .contributor_svg_section svg {
             width: 55%;
             margin-right: 4%;
         }
-       
     </style>
 </head>
 
@@ -68,8 +74,8 @@
                 <li><a href="contributer.html" class="active hover-line nav navbars">MEMBERS & ALUMNI</a></li>
                 <!-- NAVBAR HIGHLIGHT FOR CURRENT PAGE -->
                 <li><a href="opportunity.html" class="hover-line nav navbars">RUSH SCHEDULE</a></li>
-                <li><a href="contact.html" class="hover-line nav navbars">CONTACT US</a></li>
                 <li><a href="team.html" class="hover-line nav navbars">FOUNDATION</a></li>
+                <li><a href="contact.html" class="hover-line nav navbars">CONTACT US</a></li>
             </ul>
 
 
@@ -79,8 +85,8 @@
     </nav>
     <div class="contributor_svg_section">
         <!-- height="505.29587" -->
-        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
-            viewBox="0 0 936.13137 505.29587" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 936.13137 505.29587"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
             <path
                 d="M191.22942,619.35948l-2.92,14.65c-.22,1.12-.45,2.26-.7,3.39a14.28772,14.28772,0,0,0-7.34.41,68.511,68.511,0,0,1,5.04,8.43c-1.84,5.67-4.54,10.91-9.06,14.7a22.71964,22.71964,0,0,1-21.95,3.86l.13-.58c-4.86-9.43-2.22-21.32,3.82-30.03a58.3846,58.3846,0,0,1,10.85-11.47c4.07995-3.4,8.49-6.45,12.86-9.46A5.99007,5.99007,0,0,1,191.22942,619.35948Z"
                 transform="translate(-131.93432 -197.35206)" fill="#e4e4e4" />
@@ -449,9 +455,10 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <div class="contributor_bar">
-    <h4 class="contributor_header">Our Members</h4>
-    <input type="text" id="search" placeholder="Find a Member"></div>
-<!-- 
+        <h4 class="contributor_header">Our Members</h4>
+        <input type="text" id="search" placeholder="Find a Member">
+    </div>
+    <!-- 
     <div id="contributor" data-aos="zoom-out-up">
     </div> -->
 
@@ -460,55 +467,55 @@
 
 
     <script>
-    const contributors = [
-      { 
-        Name: "Vincent Iadarola", 
-        html_url: "https://www.linkedin.com/in/vincent-iadarola-2528832a7/", 
-        avatar_url: "member_imgs/VIadarola.jpeg", 
-        roles_held: "President" 
-      },
-      { 
-        Name: "Tyler RichardSON", 
-        html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images", 
-        avatar_url: "member_imgs/tylah.jpg", 
-        roles_held: "Treasurer" 
-      },
-      { 
-        Name: "Kellen Klein", 
-        html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images", 
-        avatar_url: "member_imgs/Kellog.jpeg", 
-        roles_held: "Member" 
-      },
-      { 
-        Name: "Emma Wang", 
-        html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images", 
-        avatar_url: "member_imgs/empty.jpeg.jpg", 
-        roles_held: "Member" 
-      },
-      { 
-        Name: "Maxwell Schwarz", 
-        html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images", 
-        avatar_url: "member_imgs/empty.jpeg.jpg", 
-        roles_held: "Member" 
-      },
-      // Add as many as you need
-    ];
-  
-    const contributorBlockContainer = document.getElementById('contributor');
-    const searchBar = document.getElementById("search");
-  
-    searchBar.addEventListener('keyup', (event) => {
-      const inputValue = event.target.value.toLowerCase();
-      const findContributors = contributors.filter((contributor) =>
-        contributor.Name.toLowerCase().includes(inputValue)
-      );
-      showContributorsInfo(findContributors);
-    });
-  
-    const showContributorsInfo = (contribInfos) => {
-        const cardInnerContent = contribInfos
-            .map((info) => {
-            return `
+        const contributors = [
+            {
+                Name: "Vincent Iadarola",
+                html_url: "https://www.linkedin.com/in/vincent-iadarola-2528832a7/",
+                avatar_url: "member_imgs/VIadarola.jpeg",
+                roles_held: "President"
+            },
+            {
+                Name: "Tyler RichardSON",
+                html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images",
+                avatar_url: "member_imgs/tylah.jpg",
+                roles_held: "Treasurer"
+            },
+            {
+                Name: "Kellen Klein",
+                html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images",
+                avatar_url: "member_imgs/Kellog.jpeg",
+                roles_held: "Member"
+            },
+            {
+                Name: "Emma Wang",
+                html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images",
+                avatar_url: "member_imgs/empty.jpeg.jpg",
+                roles_held: "Member"
+            },
+            {
+                Name: "Maxwell Schwarz",
+                html_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4657961%2Fpexels-photo-4657961.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&f=1&nofb=1&ipt=f51e65c595d54842256d86aa62c093a9656fb924820a77558145a38e435c1d80&ipo=images",
+                avatar_url: "member_imgs/empty.jpeg.jpg",
+                roles_held: "Member"
+            },
+            // Add as many as you need
+        ];
+
+        const contributorBlockContainer = document.getElementById('contributor');
+        const searchBar = document.getElementById("search");
+
+        searchBar.addEventListener('keyup', (event) => {
+            const inputValue = event.target.value.toLowerCase();
+            const findContributors = contributors.filter((contributor) =>
+                contributor.Name.toLowerCase().includes(inputValue)
+            );
+            showContributorsInfo(findContributors);
+        });
+
+        const showContributorsInfo = (contribInfos) => {
+            const cardInnerContent = contribInfos
+                .map((info) => {
+                    return `
                 <div class="userBlock" style="border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
                 <a href="${info.html_url}" target="_blank">
                     <img src="${info.avatar_url}" alt="${info.Name}" />
@@ -519,18 +526,18 @@
                 </div>
                 </div>
             `;
-            }
-        ).join('');
-        contributorBlockContainer.innerHTML = cardInnerContent;
-    };
-    // Display all contributors by default
-    showContributorsInfo(contributors);
-  </script>
+                }
+                ).join('');
+            contributorBlockContainer.innerHTML = cardInnerContent;
+        };
+        // Display all contributors by default
+        showContributorsInfo(contributors);
+    </script>
 </body>
 
 
-  
-  
+
+
 
 
 </html>
