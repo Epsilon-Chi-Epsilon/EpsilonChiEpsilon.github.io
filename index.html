@@ -136,7 +136,7 @@
   <div id="home_welcome" data-aos="zoom-out">
     <div id="banner_data">
       <h1 id="hackclub">EXE Project Fraternity</h1><br>
-      <h1 id="hackclub-des"> A Co-ed Fraternity/Comunity/Project team (typing text animation) </h1>
+      <h1 id="hackclub-des"> A <span class="typed"></span></h1>
     </div>
   </div>
   <div class="context">
@@ -290,5 +290,22 @@
 </script>
 
 <!-- <script src="burger.js"></script> -->
+
+<!-- typing scripts -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed('.typed', {
+    strings: [
+      "Coed Fraternity",
+      "Project Team",
+      "Meow" 
+      //Add more
+    ],
+    typeSpeed: 50,    // typing speed in milliseconds
+    backSpeed: 25,    // backspacing speed in milliseconds
+    backDelay: 1500,  // time before backspacing starts
+    loop: true        // loop the animation
+  });
+</script>
 
 </html>
