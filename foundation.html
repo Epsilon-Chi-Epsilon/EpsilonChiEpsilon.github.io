@@ -224,7 +224,7 @@
 
         .company-description-content {
             margin: 0 auto;
-            text-align: center;
+            text-align: left;
         }
 
         .company-description-heading {
@@ -612,73 +612,72 @@
         </div>
     </section>
 
-    <!-- Company Description -->
     <div class="content-wrapper">
         <div class="company-description container-fluid">
-            <div class="download-icons" style="display: flex; justify-content: space-around;">
-                <div class="company-description-content" style="padding-right: 8%;">
-                    <h2 class="company-description-heading">Our Values</h2>
-                    <p class="company-description-text">AAAAAAA AAAAA AAAAAA AAAAA AAAAA AAAAAAAA AA
-                        AAAAAAAAA AA AAA AAAAAAAA. AA AAAAAAA AAAA AAAAAA AAAAA AAAAAAAAAA
-                        AAAAAAAAA, AAAAAAAA AAAAAAA, AAA AAAAAAAAA AAAAAAAAA AA AAA AAAE AAAAA.</p>
-                    <p class="company-description-text">AAA AAAAAAA AA AA AAAAAAAA AAAA AAAAA A AAAAAAAAAA
-                        AAAAAAAAA AA AAAAAE'S AAAAA. AA AAAAAE AAA AA AAAAAAAA A AAAAAE AA AAAAAAAAA, AAAAAAAAA,
-                        AAA AAAAAAAAA AAAAAAAAA. AAAAA AAA, AA AAAAAE AA AAAA AAAAAAAAA AAA AAAAAA AAAAAAAAAAAAA.</p>
-                    <p class="company-description-text">AA AA AAAAAAAA AA AAAAA AAAAA AAAAA, AAA AAAAA AAAAAA AAAAAAA –
-
+            <div class="row">
+                <!-- Mission Statement Column -->
+                <div class="col-lg-8 col-md-12 company-description-content">
+                    <h2 class="company-description-heading">Mission Statement</h2>
+                    <p class="company-description-text">At EXE, we are committed to empowering every individual to unlock their full potential. We believe that learning is most effective when it extends beyond the classroom into real-world projects that harness and refine technical skills. Our mission is to build a vibrant, inclusive community where each member's unique talents and perspectives are celebrated, and where collaboration fuels both personal and professional growth.</p>
+                    <p class="company-description-text">We understand that balancing dedicated project work with rich social interactions is crucial. Social connections nurture creativity, build trust, and foster a supportive network that enhances our collective ability to tackle complex challenges. Whether it's through hands-on developmental projects in computer engineering, electrical engineering, or computer science, or through collaborative community events, we strive to create an ecosystem where technical innovation and human connection go hand in hand.</p>
+                    <p class="company-description-text">Transparency, fairness, and accountability are at the heart of everything we do. By maintaining clear and open channels of communication, we ensure that every action we take is driven by a commitment to excellence and mutual respect. We believe that a balanced approach—one that equally values focused technical endeavors and meaningful social engagement—leads to a more dynamic, resilient, and forward-thinking community.</p>
+                    <p class="company-description-text">At EXE, we are more than just a platform for skill development; we are a community dedicated to nurturing a culture of continuous learning, innovation, and collaboration. Together, we work to create a future where every individual can thrive, contributing not only to groundbreaking projects but also to a supportive, socially enriched society.</p>
                 </div>
-                <div class="company-description-content">
-                    <h2 class="company-description-heading">Learn about our Guiding Documents</h2>
-                    <div class="download-icons" style="display: flex; justify-content: space-around;">
-                        <div>
-                            <a href="path/to/constitution.pdf" download>
-                                <i class="fa fa-file-pdf-o" style="font-size:48px;color:red"></i>
-                                <p style="color: white;">Download Constitution</p>
+                
+                <!-- Guiding Documents Column -->
+                <div class="col-lg-4 col-md-12 company-description-content d-flex flex-column">
+                    <h2 class="company-description-heading mb-4">Learn about our Guiding Documents</h2>
+                    <div class="download-icons d-flex flex-column justify-content-around flex-grow-1">
+                        <div class="document-container text-center mb-5">
+                            <a href="path/to/constitution.pdf" download class="document-link">
+                                <i class="fa fa-file-pdf-o mb-3" style="font-size:64px; color:red;"></i>
+                                <p style="color: white; font-size: 1.2rem;">Download Constitution</p>
                             </a>
                         </div>
-                        <div>
-                            <a href="path/to/bylaws.pdf" download>
-                                <i class="fa fa-file-pdf-o" style="font-size:48px;color:blue"></i>
-                                <p style="color: white;">Download Bylaws</p>
+                        <div class="document-container text-center">
+                            <a href="path/to/bylaws.pdf" download class="document-link">
+                                <i class="fa fa-file-pdf-o mb-3" style="font-size:64px; color:blue;"></i>
+                                <p style="color: white; font-size: 1.2rem;">Download By-Laws</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="company-description" style="background-color: white;">
-            <h2 class="content-section-title">Epsilon Chi Epsilon Pillars</h2>
+    </div>
+    <div class="company-description" style="background-color: white;">
+        <h2 class="content-section-title">Epsilon Chi Epsilon Pillars</h2>
 
-            <div class="values-grid">
-                <!-- Value 1 -->
-                <div class="value-card">
-                    <div class="value-icon-container">E</div>
-                    <h3 class="value-heading">Encouragment</h3>
-                    <p class="value-text">We encourage our members to take initiative, pursue their passions,
-                        and support each other in achieving their goals. By fostering a collaborative and inclusive
-                        environment, we help our members grow both personally and professionally.</p>
-                </div>
+        <div class="values-grid">
+            <!-- Value 1 -->
+            <div class="value-card">
+                <div class="value-icon-container">E</div>
+                <h3 class="value-heading">Encouragment</h3>
+                <p class="value-text">We encourage our members to take initiative, pursue their passions,
+                    and support each other in achieving their goals. By fostering a collaborative and inclusive
+                    environment, we help our members grow both personally and professionally.</p>
+            </div>
 
-                <!-- Value 2 -->
-                <div class="value-card">
-                    <div class="value-icon-container">C</div>
-                    <h3 class="value-heading">Conscientious</h3>
-                    <p class="value-text">We act with integrity and responsibility, ensuring that our actions and
-                        decisions are guided by ethical principles and a commitment to doing what is right for our
-                        members, our community, and the environment.</p>
-                </div>
+            <!-- Value 2 -->
+            <div class="value-card">
+                <div class="value-icon-container">C</div>
+                <h3 class="value-heading">Conscientious</h3>
+                <p class="value-text">We act with integrity and responsibility, ensuring that our actions and
+                    decisions are guided by ethical principles and a commitment to doing what is right for our
+                    members, our community, and the environment.</p>
+            </div>
 
-                <!-- Value 3 -->
-                <div class="value-card">
-                    <div class="value-icon-container">E</div>
-                    <h3 class="value-heading">Excellence</h3>
-                    <p class="value-text">We strive for excellence in everything we do. While we understand that
-                        achieving perfection is impossible, we believe in perseverance and
-                        continuous improvement. Our members believe in never giving up and pushing forward
-                        until they achieve their goals.</p>
-                </div>
+            <!-- Value 3 -->
+            <div class="value-card">
+                <div class="value-icon-container">E</div>
+                <h3 class="value-heading">Excellence</h3>
+                <p class="value-text">We strive for excellence in everything we do. While we understand that
+                    achieving perfection is impossible, we believe in perseverance and
+                    continuous improvement. Our members believe in never giving up and pushing forward
+                    until they achieve their goals.</p>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="founders-background">
