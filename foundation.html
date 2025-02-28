@@ -30,11 +30,11 @@
             flex-direction: row;
             justify-content: space-around;
             padding: 20px;
-            background: linear-gradient(90deg,#362f5abd , #212529 80%);
+            background: linear-gradient(90deg, #362f5abd, #212529 80%);
             padding: 20px;
             padding-top: none;
             padding-right: none;
-          
+
         }
 
         .team_text_build {
@@ -138,38 +138,47 @@
                 opacity: 0;
             }
         }
+
         @media(max-width:1200px) {
-            .team_svg_section{
+            .team_svg_section {
                 width: 100% !important;
             }
-            .team_svg_section h2{
+
+            .team_svg_section h2 {
                 font-size: 1.52rem;
             }
-            .team_svg_section h4{
+
+            .team_svg_section h4 {
                 font-size: 1.25rem;
             }
         }
-        @media (max-width:700px){
-            .team_svg_section{
+
+        @media (max-width:700px) {
+            .team_svg_section {
                 padding-top: 40px;
             }
-            .team_svg_section h2{
+
+            .team_svg_section h2 {
                 font-size: 1.3rem;
             }
-            .team_svg_section h4{
+
+            .team_svg_section h4 {
                 font-size: 0.8rem;
             }
         }
-        @media (max-width:800px){
-            #team_img:hover{
+
+        @media (max-width:800px) {
+            #team_img:hover {
                 transform: scale(1) !important;
             }
         }
-        @media screen and (max-device-width:664px) and (min-device-width:515px){
-            #team_img{
+
+        @media screen and (max-device-width:664px) and (min-device-width:515px) {
+            #team_img {
                 width: 180px !important;
             }
-            #team_img img{
+
+            #team_img img {
                 width: 140px !important;
             }
         }
@@ -179,92 +188,82 @@
             background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding
-            : 4rem 2rem;
+            padding: 4rem 2rem;
         }
-        
+
         .page-title {
             margin: 0;
             font-size: 2.5rem;
         }
-        
+
         .page-subtitle {
             font-weight: 300;
             margin-top: 1rem;
         }
-        
+
         .content-wrapper {
-            max-width: 1200px;
             margin: 0 auto;
-            padding: 4rem 2rem;
         }
-        
+
         .content-section-title {
-            color: #eb3750;
+            color: black;
             text-align: center;
             margin-bottom: 3rem;
             position: relative;
             font-size: 2rem;
+            font-weight: bolder;
         }
-        
-        .content-section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background-color: #3498db;
-        }
-        
+
+
+
         /* Company Description */
         .company-description {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             padding: 3rem;
-            margin-bottom: 4rem;
+            margin-bottom: 5rem;
         }
-        
+
         .company-description-content {
-            max-width: 800px;
             margin: 0 auto;
             text-align: center;
         }
-        
+
         .company-description-heading {
-            font-size: 1.8rem;
-            color: #2c3e50;
+            font-weight: bolder;
+            /* font-size: 1.8rem; */
+            color: white;
         }
-        
+
         .company-description-text {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
+            color: white;
         }
-        
+
         /* Values Styles */
         .values-grid {
+
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
+            padding-bottom: 5rem;
         }
-        
+
         .value-card {
             background-color: white;
             border-radius: 8px;
             padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.63);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .value-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
-        
+
         .value-icon-container {
-            background-color: #3498db;
+
+            background-color: #5e0712;
             color: white;
             width: 70px;
             height: 70px;
@@ -276,78 +275,77 @@
             font-size: 1.8rem;
             font-weight: bold;
         }
-        
+
         .value-heading {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: #2c3e50;
             text-align: center;
         }
-        
+
         .value-text {
             text-align: center;
         }
-        
-        /* Founders Styles */
-        .founders-background {
-            background-color: #eef2f7;
-        }
-        
+
+
+
         .founders-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-        
+
         .founder-card {
-            background-color: white;
+            background-color: #080b5280;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(24, 0, 0, 0.776);
             transition: transform 0.3s ease;
+
         }
-        
+
         .founder-card:hover {
             transform: translateY(-5px);
         }
-        
+
         .founder-image-container {
             width: 100%;
             height: 200px;
-            background-color: #ddd;
+            background-color: #080b5280;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
+
         .founder-details {
             padding: 1.5rem;
         }
-        
+
         .founder-name {
+            margin-top: 2%;
             font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
+            color: #eb374faf;
         }
-        
+
         .founder-role {
-            color: #3498db;
-            margin-bottom: 1rem;
+            color: #eb375059;
+            position: relative;
+            bottom: 10px;
             font-weight: 500;
         }
-        
+
         .founder-bio {
             font-size: 0.9rem;
             line-height: 1.6;
-            color: #555;
+            color: #cecdcd;
         }
-        
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .values-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .founders-grid {
                 grid-template-columns: 1fr;
             }
@@ -363,9 +361,9 @@
         <a class="header" href="index.html">
             <img id="logo" src="./images/hackclubrait-logo.png">
             <div class="logo_header">
-				<span style="color: #eb3750; position: relative; bottom: 4px;"> /* </span>
-				<span style="color: #eb3750; font-size: 1.25em;">EXE</span>
-				<span style="color: #eb3750; position: relative; bottom: 4px;"> */ </span>
+                <span style="color: #eb3750; position: relative; bottom: 4px;"> /* </span>
+                <span style="color: #eb3750; font-size: 1.25em;">EXE</span>
+                <span style="color: #eb3750; position: relative; bottom: 4px;"> */ </span>
             </div>
         </a>
 
@@ -376,12 +374,12 @@
         <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
             <ul class="nav navbars navbar-nav ms-auto">
                 <li><a href="index.html" class="hover-line nav navbars">HOME</a></li>
-				<li><a href="projects.html" class="hover-line nav navbars">PROJECTS</a></li>
-				<li><a href="members.html" class="hover-line nav navbars">MEMBERS & ALUMNI</a></li>
-				<li><a href="schedule.html" class="hover-line nav navbars">RUSH SCHEDULE</a></li>
-				<!-- NAVBAR HIGHLIGHT FOR CURRENT PAGE -->
-				<li><a href="foundation.html" class="active hover-line nav navbars">FOUNDATION</a></li>
-				<li><a href="contact.html" class="hover-line nav navbars">CONTACT US</a></li>
+                <li><a href="projects.html" class="hover-line nav navbars">PROJECTS</a></li>
+                <li><a href="members.html" class="hover-line nav navbars">MEMBERS & ALUMNI</a></li>
+                <li><a href="schedule.html" class="hover-line nav navbars">RUSH SCHEDULE</a></li>
+                <!-- NAVBAR HIGHLIGHT FOR CURRENT PAGE -->
+                <li><a href="foundation.html" class="active hover-line nav navbars">FOUNDATION</a></li>
+                <li><a href="contact.html" class="hover-line nav navbars">CONTACT US</a></li>
             </ul>
         </div>
     </nav>
@@ -608,126 +606,167 @@
             </g>
         </svg>
         <div class="team_text_build">
-            <h2>Building our Orgainzation <span class="one">.</span><span class="two">.</span><span class="three">.</span></h2>
+            <h2>Building our Orgainzation <span class="one">.</span><span class="two">.</span><span
+                    class="three">.</span></h2>
             <h4>Learn more about our foundation and values</h4>
         </div>
     </section>
-    
+
     <!-- Company Description -->
     <div class="content-wrapper">
-        <div class="company-description">
-            <div class="company-description-content">
-                <h2 class="company-description-heading">Who We Are</h2>
-                <p class="company-description-text">Founded in 2015, our company has been at the forefront of innovation in our industry. We believe that success comes from a combination of visionary leadership, dedicated teamwork, and unwavering commitment to our core values.</p>
-                <p class="company-description-text">Our mission is to create solutions that make a meaningful difference in people's lives. We achieve this by fostering a culture of creativity, excellence, and continuous improvement. Every day, we strive to push boundaries and exceed expectations.</p>
-                <p class="company-description-text">As we continue to grow and evolve, our values remain constant – guiding our decisions, shaping our culture, and defining who we are as a company. These principles are more than just words; they're the foundation of everything we do.</p>
+        <div class="company-description container-fluid">
+            <div class="download-icons" style="display: flex; justify-content: space-around;">
+                <div class="company-description-content" style="padding-right: 8%;">
+                    <h2 class="company-description-heading">Our Values</h2>
+                    <p class="company-description-text">AAAAAAA AAAAA AAAAAA AAAAA AAAAA AAAAAAAA AA
+                        AAAAAAAAA AA AAA AAAAAAAA. AA AAAAAAA AAAA AAAAAA AAAAA AAAAAAAAAA
+                        AAAAAAAAA, AAAAAAAA AAAAAAA, AAA AAAAAAAAA AAAAAAAAA AA AAA AAAE AAAAA.</p>
+                    <p class="company-description-text">AAA AAAAAAA AA AA AAAAAAAA AAAA AAAAA A AAAAAAAAAA
+                        AAAAAAAAA AA AAAAAE'S AAAAA. AA AAAAAE AAA AA AAAAAAAA A AAAAAE AA AAAAAAAAA, AAAAAAAAA,
+                        AAA AAAAAAAAA AAAAAAAAA. AAAAA AAA, AA AAAAAE AA AAAA AAAAAAAAA AAA AAAAAA AAAAAAAAAAAAA.</p>
+                    <p class="company-description-text">AA AA AAAAAAAA AA AAAAA AAAAA AAAAA, AAA AAAAA AAAAAA AAAAAAA –
+
+                </div>
+                <div class="company-description-content">
+                    <h2 class="company-description-heading">Learn about our Guiding Documents</h2>
+                    <div class="download-icons" style="display: flex; justify-content: space-around;">
+                        <div>
+                            <a href="path/to/constitution.pdf" download>
+                                <i class="fa fa-file-pdf-o" style="font-size:48px;color:red"></i>
+                                <p style="color: white;">Download Constitution</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="path/to/bylaws.pdf" download>
+                                <i class="fa fa-file-pdf-o" style="font-size:48px;color:blue"></i>
+                                <p style="color: white;">Download Bylaws</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <h2 class="content-section-title">Epsilon Chi Epsilon Pillars</h2>
-        
-        <div class="values-grid">
-            <!-- Value 1 -->
-            <div class="value-card">
-                <div class="value-icon-container">E</div>
-                <h3 class="value-heading">Encouraging</h3>
-                <p class="value-text">We embrace creative thinking and continuously seek new solutions to complex problems. Innovation is not just a goal—it's our way of life and the driving force behind everything we create.</p>
-            </div>
-            
-            <!-- Value 2 -->
-            <div class="value-card">
-                <div class="value-icon-container">C</div>
-                <h3 class="value-heading">Conscientious</h3>
-                <p class="value-text">We strive for excellence in everything we do, maintaining the highest standards of quality and professionalism in our products and services to deliver exceptional experiences for our customers.</p>
-            </div>
-            
-            <!-- Value 3 -->    
-            <div class="value-card">
-                <div class="value-icon-container">E</div>
-                <h3 class="value-heading">Empathy</h3>
-                <p class="value-text">We conduct our business with honesty, transparency, and ethical practices, building trust with our customers, partners, and employees as the foundation of lasting relationships.</p>
+        <div class="company-description" style="background-color: white;">
+            <h2 class="content-section-title">Epsilon Chi Epsilon Pillars</h2>
+
+            <div class="values-grid">
+                <!-- Value 1 -->
+                <div class="value-card">
+                    <div class="value-icon-container">E</div>
+                    <h3 class="value-heading">Encouragment</h3>
+                    <p class="value-text">We encourage our members to take initiative, pursue their passions,
+                        and support each other in achieving their goals. By fostering a collaborative and inclusive
+                        environment, we help our members grow both personally and professionally.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="value-card">
+                    <div class="value-icon-container">C</div>
+                    <h3 class="value-heading">Conscientious</h3>
+                    <p class="value-text">We act with integrity and responsibility, ensuring that our actions and
+                        decisions are guided by ethical principles and a commitment to doing what is right for our
+                        members, our community, and the environment.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="value-card">
+                    <div class="value-icon-container">E</div>
+                    <h3 class="value-heading">Excellence</h3>
+                    <p class="value-text">We strive for excellence in everything we do. While we understand that
+                        achieving perfection is impossible, we believe in perseverance and
+                        continuous improvement. Our members believe in never giving up and pushing forward
+                        until they achieve their goals.</p>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <div class="founders-background">
         <div class="content-wrapper">
-            <h2 class="content-section-title">Meet Our Founders</h2>
-            
+            <h2 class="content-section-title" style="color:white">Meet Our Founders</h2>
+
             <div class="founders-grid">
                 <!-- Founder 1 -->
                 <div class="founder-card">
                     <div class="founder-image-container">
-                        <img src="/api/placeholder/250/200" alt="Sarah Johnson">
+                        <img src="member_imgs/VIadarola.jpeg" alt="Vincent Iadarola" style="width: 100%; height: auto;">
                     </div>
                     <div class="founder-details">
-                        <h3 class="founder-name">Sarah Johnson</h3>
-                        <p class="founder-role">Chief Executive Officer</p>
-                        <p class="founder-bio">With over 15 years of industry experience, Sarah leads our company with vision and determination, setting the strategic direction for our growth.</p>
+                        <h3 class="founder-name">Vincent Iadarola</h3>
+                        <p class="founder-role">Class of 2025</p>
+                        <p class="founder-bio">With over 15 years of industry experience, Vincent leads our company
+                            with vision and determination, setting the strategic direction for our growth.</p>
                     </div>
                 </div>
-                
+
                 <!-- Founder 2 -->
                 <div class="founder-card">
                     <div class="founder-image-container">
-                        <img src="/api/placeholder/250/200" alt="Michael Chen">
+                        <img src="member_imgs/tylah.jpg" alt="Tyler Richard" style="width: 100%; height: auto;">
                     </div>
                     <div class="founder-details">
-                        <h3 class="founder-name">Michael Chen</h3>
-                        <p class="founder-role">Chief Technology Officer</p>
-                        <p class="founder-bio">Michael's technical expertise and innovative mindset drive our product development and technology initiatives forward.</p>
+                        <h3 class="founder-name">Tyler Richard</h3>
+                        <p class="founder-role">Class of 2026</p>
+                        <p class="founder-bio">Tyler's technical expertise and innovative mindset drive our
+                            product development and technology initiatives forward.</p>
                     </div>
                 </div>
-                
+
                 <!-- Founder 3 -->
                 <div class="founder-card">
                     <div class="founder-image-container">
-                        <img src="/api/placeholder/250/200" alt="Elena Rodriguez">
+                        <img src="member_imgs/empty.jpeg.jpg" alt="Emma Wong" style="width: 100%; height: auto;">
                     </div>
                     <div class="founder-details">
-                        <h3 class="founder-name">Elena Rodriguez</h3>
-                        <p class="founder-role">Chief Financial Officer</p>
-                        <p class="founder-bio">Elena brings financial acumen and strategic insight, ensuring our company's sustainable growth and fiscal responsibility.</p>
+                        <h3 class="founder-name">Emma Wong</h3>
+                        <p class="founder-role">Class of 2028</p>
+                        <p class="founder-bio">Emma brings financial acumen and strategic insight, ensuring our
+                            company's sustainable growth and fiscal responsibility.</p>
                     </div>
                 </div>
-                
+
                 <!-- Founder 4 -->
                 <div class="founder-card">
                     <div class="founder-image-container">
-                        <img src="/api/placeholder/250/200" alt="David Washington">
+                        <img src="member_imgs/Kellog.jpeg" alt="Kellen Klein" style="width: 100%; height: auto;">
                     </div>
                     <div class="founder-details">
-                        <h3 class="founder-name">David Washington</h3>
-                        <p class="founder-role">Chief Marketing Officer</p>
-                        <p class="founder-bio">David's creativity and market insight have shaped our brand identity and built our strong market presence.</p>
+                        <h3 class="founder-name">Kellen Klein</h3>
+                        <p class="founder-role">Class of 2028</p>
+                        <p class="founder-bio">Kellen's creativity and market insight have shaped our brand identity
+                            and built our strong market presence.</p>
                     </div>
                 </div>
-                
+
                 <!-- Founder 5 -->
                 <div class="founder-card">
                     <div class="founder-image-container">
-                        <img src="/api/placeholder/250/200" alt="Aisha Patel">
+                        <img src="member_imgs/empty.jpeg.jpg" alt="Kenzie Kujava" style="width: 100%; height: auto;">
                     </div>
                     <div class="founder-details">
-                        <h3 class="founder-name">Aisha Patel</h3>
-                        <p class="founder-role">Chief Operating Officer</p>
-                        <p class="founder-bio">Aisha's operational excellence and leadership have streamlined our processes and improved our organizational effectiveness.</p>
+                        <h3 class="founder-name">Kenzie Kujava</h3>
+                        <p class="founder-role">Class of 2026</p>
+                        <p class="founder-bio">Kenzie's operational excellence and leadership have streamlined our
+                            processes and improved our organizational effectiveness.</p>
                     </div>
                 </div>
-                
+
                 <!-- Founder 6 -->
                 <div class="founder-card">
                     <div class="founder-image-container">
-                        <img src="/api/placeholder/250/200" alt="James Wilson">
+                        <img src="member_imgs/empty.jpeg.jpg" alt="Max Schwarz" style="width: 100%; height: auto;">
                     </div>
                     <div class="founder-details">
-                        <h3 class="founder-name">James Wilson</h3>
-                        <p class="founder-role">Chief People Officer</p>
-                        <p class="founder-bio">James champions our company culture and talent development, ensuring we attract and retain the best people in the industry.</p>
+                        <h3 class="founder-name">Max Schwarz</h3>
+                        <p class="founder-role">Class of 2026</p>
+                        <p class="founder-bio">Max champions our company culture and talent development, ensuring
+                            we attract and retain the best people in the industry.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 <script>
